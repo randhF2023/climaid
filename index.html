@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climaid - Volunteer for Climate Action</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'forest-green': '#2C5F2D',
+                        'leaf-green': '#97BC62',
+                        'bark-brown': '#5C4033',
+                    },
+                    backgroundImage: {
+                        'forest-pattern': "url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1920&q=80')",
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-forest-pattern bg-cover bg-center min-h-full flex flex-col">
+    <div class="bg-black bg-opacity-50 flex-grow flex flex-col">
+        <header class="bg-gradient-to-r from-forest-green to-leaf-green text-white py-6">
+            <div class="container mx-auto px-4">
+                <div class="flex items-center justify-center">
+                    <img src="assets/logo.png" alt="Climaid Logo" class="h-12 mr-4">
+                    <h1 class="text-4xl md:text-6xl font-bold">Climaid</h1>
+                </div>
+                <p class="text-xl md:text-2xl text-center mt-2">Empowering Climate Action Through Volunteering</p>
+            </div>
+        </header>
+
+        <main class="container mx-auto px-4 py-12 flex-grow flex items-center justify-center">
+            <div class="max-w-[1400px] w-full bg-white bg-opacity-80 rounded-lg shadow-2xl p-10">
+                <div class="flex flex-col lg:flex-row gap-12">
+                    <div class="lg:w-3/4">
+                        <div class="relative h-0 overflow-hidden rounded-lg shadow-lg" style="padding-bottom: 56.25%;">
+                            <iframe class="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/4">
+                        <h2 class="text-2xl lg:text-3xl font-bold text-center mb-6 text-forest-green">Stay Updated on Climaid's Launch</h2>
+                        <form action="#" method="POST" class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-lg font-medium text-bark-brown">Name</label>
+                                <input type="text" id="name" name="name" required class="mt-1 block w-full rounded-md border-leaf-green shadow-sm focus:border-forest-green focus:ring focus:ring-forest-green focus:ring-opacity-50 text-lg py-3 px-4 bg-white">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-lg font-medium text-bark-brown">Email</label>
+                                <input type="email" id="email" name="email" required class="mt-1 block w-full rounded-md border-leaf-green shadow-sm focus:border-forest-green focus:ring focus:ring-forest-green focus:ring-opacity-50 text-lg py-3 px-4 bg-white">
+                            </div>
+                            <button type="submit" class="w-full bg-gradient-to-r from-forest-green to-leaf-green text-white font-bold py-4 px-6 rounded-md hover:from-leaf-green hover:to-forest-green transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 text-lg">
+                                Get Notified
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-bark-brown text-white py-4 mt-auto">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2024 Climaid. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
